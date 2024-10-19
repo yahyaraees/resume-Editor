@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editable Resume Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <input type="text" id="name" value="Your Name" />
+      <input type="text" id="title" value="Web Developer" />
+    </header>
+
+    <form id="resume-form">
+      <input type="email" id="email-input" placeholder="Your Email" required />
+      <input type="text" id="skill-input" placeholder="Add Skill" />
+      <button type="submit">Add Skill</button>
+    </form>
+
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Email: <input type="text" id="email" value="your.email@example.com" /></p>
+      <p>Phone: <input type="text" id="phone" value="+123 456 7890" /></p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul id="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
